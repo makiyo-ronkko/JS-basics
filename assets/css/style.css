@@ -1,0 +1,55 @@
+:root {
+  --background-color: #eee;
+  --primary-color: coral;
+  --dark-color: #333;
+  --light-color: #fff;
+  --font: "Lato", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font);
+  margin: 3rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 2rem 0;
+}
+
+#answer-section {
+  display: none;
+}
+
+#answer {
+  font-weight: bold;
+}
+
+/* Form */
+
+form div {
+  margin: 1rem 0;
+}
+.form-group {
+  margin: 2rem 0;
+}
+
+input {
+  padding: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  border: none;
+  padding: 0.5rem;
+  font-family: var(--font);
+  background-color: var(--primary-color);
+  margin: 1rem 0;
+  color: var(--light-color);
+  font-size: inherit;
+}

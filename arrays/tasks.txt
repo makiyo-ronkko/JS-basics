@@ -1,16 +1,15 @@
 1.	Make an array that has 10 numbers: 
 let numbers = [4, -5, -2, 7, 15, -9, 0, 6, 7, 2];
     a.	Program prints out the numbers in the array as follows:
-    1. number 4
-    2. number -5
-    ...
+        1. number 4
+        2. number -5
+        ...
     b.	Program swaps third and seventh number other way around.
     c.	Program calculates the sum of the numbers and prints out the result.
     d.	Program calculates the average of the numbers and prints out the result.
     e.	Program finds out the smallest number and prints it.
     f.	Program asks one number from the user and then counts how many times that number is in the array. Program prints out the result.
     g.	Program prints out all the numbers that are in the array before 0.
-    h.	Program counts how many numbers there are after 0 and prints out the result.
 
 2.	Make a program that draws 7 digits for Lotto numbers. You have to make sure that same number isn’t there many times.
 You can use array that has 40 pieces of zeros. When you get a random number that is the index of the array and you make the value inside zero to one, but if it already was one you draw a new random number.

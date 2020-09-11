@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mathematical operations - task 1</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section>
+      <h1>Mathematical operations - task 1</h1>
+      <div class="task">
+        <h2>How much gasoline you get?</h2>
+        <p>
+          Make a program that asks the price of the gasoline and amount of money
+          from the user. The program calculates how much gasoline the user gets
+          with the money. Result is printed to the user.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="solution">
+        <h3>Solution</h3>
+
+        <form class="form">
+          <div class="form-group">
+            <label for="price">How much litre of gasoline costs?</label>
+            <input type="number" name="price" id="price" step=".01" />
+          </div>
+          <div class="form-group">
+            <label for="money">How much money you have?</label>
+            <input type="number" name="money" id="money" step=".01" />
+          </div>
+          <button type="submit" name="button">Calculate</button>
+        </form>
+      </div>
+    </section>
+    <section id="answer-section">
+      <div>
+        <h3>Answer</h3>
+        <p>You will get <span id="answer"></span> litres of gasoline</p>
+      </div>
+    </section>
+    <script>
+      const form = document.querySelector("form");
+      form.addEventListener("submit", (e) => {
+        const x = e.target.price.value;
+        const y = e.target.money.value;
+
+        const answer = y / x;
+
+        e.target.price.value = "";
+        e.target.money.value = "";
+
+        document.getElementById("answer-section").style.display = "block";
+        document.getElementById("answer").innerHTML = answer.toFixed(2);
+        event.preventDefault();
+      });
+    </script>
+  </body>
+</html>
